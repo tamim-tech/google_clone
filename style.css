@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 4584ef */
+/* fff */
+section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    top: 20px;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+ 
+section header ul li {
+    list-style: none;
+    margin-left: 20px;
+    color: rgba(0,0,0,0.87);
+    
+}
+
+section header li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+
+section header li button{
+    background-color: #1a73e8;
+    box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+    color: #fff;
+    padding: 8px 14px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+ 
+
+section .main .searchbox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+
+}
+
+section .main .searchbox .icons{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+section .main .buttons{
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+section .main .buttons button{
+    margin: 0 5px;
+    padding: 13px 20px;
+    color: #555;
+    border: none;
+    border-radius: 1px solid transparent;
+    outline: none;
+}
+
+
+
+section .main .lang{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color:rgba(0,0,0,0.87);
+}
+
+section .footer{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+section .footer .row{
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, .04);
+}
+
+section .footer .row ul{
+    display: flex;
+}
+
+
+
+section .footer .row ul li{
+    list-style: none;
+}
+
+
+section .footer .row ul li a{
+    text-decoration: none;
+    color: #5f6368;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Mobile View */
+@media (max-width:768px) {
+    section header{
+        width:86%;
+    }
+    section .gologo img{
+        width: 203px;
+        height: 70px;
+    }
+    section .main{
+        width: 300px;
+    }
+
+    section .main .searchbox{
+    width: 87%;
+    margin-top: 12px;
+    }
+
+    section .footer .row ul{
+    display: block;
+    width: 100%;
+    background-color: #f2f2f2;
+    }
+
+}
